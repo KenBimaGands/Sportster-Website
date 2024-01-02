@@ -1,0 +1,130 @@
+$primary-color: #fb7124;
+$secondary-color: #fafafa;
+$text-color-1: black;
+$text-color-2: white;
+
+body {
+  font-family: 'Product Sans', sans-serif;
+  height: 1000px;
+}
+
+.navbar {
+  .navbar-brand {
+    margin: auto;
+    font-size: 2em;
+  }
+  .offcanvas {
+    background-color: $primary-color;
+    color: $text-color-2;
+    .nav-item {
+      a {
+        color: $text-color-2;
+      }
+    }
+    .dropdown-menu {
+      a {
+        color: $text-color-1;
+      }
+    }
+  }
+}
+
+.jumbotron {
+  height: 400px;
+  background-color: $primary-color;
+  color: $text-color-2;
+  .containerjumbo {
+    padding-top: 100px;
+    height: 100%;
+    max-width: 100%;
+    .row {
+      padding-left: 20px;
+      width: 100%;
+    }
+    @media (min-width: 992px) {
+      h1,
+      p {
+        text-align: end;
+      }
+      h1 {
+        padding-top: 100px;
+      }
+    }
+    img {
+      border-radius: 25px;
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 2px 2px 2px rgba($color: black, $alpha: 0.3);
+      @media (max-width: 768px) {
+        max-width: 80%;
+        max-height: 80%;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        max-width: 60%;
+        max-height: 60%;
+      }
+      @media (min-width: 991.98px) {
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+.about-us {
+  .container {
+    @media (max-width: 768px) {
+      padding-top: 60px;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      padding-top: 40px;
+    }
+    @media (min-width: 992px) {
+      padding-top: 40px;
+    }
+    @media (max-width: 1200px) {
+    }
+    .row {
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.gallery {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    background-color: $primary-color;
+    .card {
+      margin: auto;
+      max-width: 100%;
+      box-shadow: 2px 2px 2px rgba($color: black, $alpha: 0.3);
+      @media (max-width: 768px) {
+        margin-top: 20px;
+      }
+      img {
+        padding: 5px;
+        border-radius: 10px;
+        max-width: 100%;
+        max-height: 280px;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 200px;
+  .container {
+    max-width: 100%;
+    min-height: 100%;
+    background-color: $primary-color;
+    align-items: center;
+  }
+}
